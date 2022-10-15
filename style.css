@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    background: url('./images/bg-mobile.svg') no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    font-size: 17px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 90%;
+
+}
+.imagetext-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.logo-box
+{
+    width: 400px;
+    max-width: 100%;
+}
+.logo-box img{
+    width: 180px;
+    height: 180px;
+}
+
+.img-box
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.img-box img{
+    width: 400px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.heading
+{
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.description
+{
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    width: 90%;
+    opacity: .85;
+}
+.text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn
+{
+    width: 15em;
+    padding: 1.1em 0;
+    border-radius: 999px;
+    border: none;
+    text-align: center;
+    color: hsl(257, 40%, 49%);
+    margin-bottom: 15em;
+}
+.btn:hover
+{
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.icons
+{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    filter: invert(100%) sepia(3%) saturate(7472%) hue-rotate(172deg) brightness(100%) contrast(107%);
+}
+
+.icon:hover
+{
+    cursor: pointer;
+    filter: invert(25%) sepia(0%) saturate(7500%) hue-rotate(272deg) brightness(108%) contrast(108%);
+}
+
+
+@media (min-width: 1250px) {
+    body 
+    {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper
+    {
+        height: 100vh;
+    }
+    .img-box
+    {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-box img
+    {
+        width: 60rem;
+        height: 60rem;
+    }
+    .text
+    {
+        display: block;
+        width: 40rem;
+        font-size: 2rem;
+        text-align: left;
+    }
+    .heading
+    {
+        text-align: left;
+    }
+    .description{
+        text-align: left;
+        font-size: 1rem;
+        
+    }
+    .imagetext-container{
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .logo-box
+    {
+        width: 100%;
+    }
+    .logo-box img 
+    {
+        width: 180px;
+        height: 180px;
+    }
+  }
+
+  
